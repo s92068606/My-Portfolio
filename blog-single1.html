@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Aska Shif - Software Engineering Undergraduate</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Logo -->
+  <link href="assets/img/s icon.webp" rel="icon">
+  <link href="assets/img/s icon.webp" rel="logo">
+  <!-- CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--  Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Aska Shif</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto active" href="#blog">Blog</a></li>
+          <li><a class="nav-link scrollto " href="Contact-details.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <div class="hero hero-single route bg-image" style="background-image: url(assets/img/cs.jpeg)">
+    <div class="overlay-mf"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="hero-title mb-4">Blog Details</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Library</a>
+            </li>
+            <li class="breadcrumb-item active">Data</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Blog Single Section ======= -->
+    <section class="blog-wrapper sect-pt4" id="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="post-box">
+              <div class="post-thumb">
+                <img src="assets/img/update_NicoElNino_shuttersrtock.webp" class="img-fluid" alt="">
+              </div>
+              <div class="post-meta">
+                <h1 class="article-title">Microsoft Zero-Days Allow Defender Bypass, Privilege Escalation</h1>
+                <ul>
+                  <li>
+                    <span class="bi bi-person"></span>
+                    <a href="#">Jai Vijayan</a>
+                    
+                  </li>
+                  <li>
+                    <span class="bi bi-tag"></span>
+                    <a href="#">Threat Intelligence</a>
+                    
+                  </li>
+                  <li>
+                    <span class="bi bi-chat-left-text"></span>
+                    <a href="#">1</a>
+                    <span class="bi bi-clock"></span> November 15, 2023
+                  </li>
+                </ul>
+              </div>
+              <div class="article-content">
+                <p>
+                  Microsoft released fixes for a total of 63 bugs in its November 2023 update, including three that threat actors are actively exploiting already and two that were disclosed previously but have not been exploited yet.
+                </p>
+                  
+                <blockquote class="blockquote">
+                  <p class="mb-0">From a raw numbers standpoint, Microsoft's November update is considerably smaller than the one in October, which contained fixes for a hefty 112 CVEs. This month's update also included fewer critical vulnerabilities — three — compared with recent months. Microsoft has assessed all but four of the remaining CVEs in its November updates as being of either moderate or important severity.</p>
+                </blockquote>
+                <p>
+
+                  <p class="mb-0">A Trio of Zero-Days That Attackers Are Actively Exploiting
+                    As always, the manner in which organizations prioritize their patching of the latest set of bugs will depend on a variety of factors. These include the prevalence of the vulnerabilities in their specific environments, the affected assets, accessibility of those assets, ease of exploitability, and other considerations.
+                    
+                    But as with every Microsoft monthly update, there are several bugs in the latest batch that security experts agreed merit greater attention than others. The three actively exploited zero-day bugs fit that category.</p>
+                </blockquote>
+                <p>
+                  <br>
+                  One of them is CVE-2023-36036, a privilege escalation vulnerability in Microsoft's Windows Cloud Files Mini Filter Driver that gives attackers a way to acquire system-level privileges. Microsoft has assessed the vulnerability as being a moderate — or important — severity threat but has provided relatively few other details about the issue. Satnam Narang, senior staff research engineer at Tenable, identified the bug as something that is likely going to be of interest to threat actors from a post-compromise activity standpoint. An attacker requires local access to an affected system to exploit the bug. The exploitation involves little complexity, user interaction, or special privileges.
+                </p>
+                <br>
+                Windows Cloud Files Mini Filter Driver is a component that is essential to the functioning of cloud-stored files on Windows systems, says Saeed Abbasi, manager of vulnerability and threat research at Qualys. “The widespread presence of this driver in almost all Windows versions amplifies the risk, providing a broad attack surface. It is currently under active attack and poses a significant risk, especially when paired with a code execution bug,” Abbasi says. 
+                <br>
+                The other zero-day bug in Microsoft's November update is CVE-2023-36033, a privilege escalation vulnerability in the Windows DWM Core Library component. This vulnerability also enables access to system-level privileges on affected systems and is relatively easy to exploit. “This vulnerability can be exploited locally, with low complexity and without needing high-level privileges or user interaction," Mike Walters, president and co-founder of Action1, wrote in a blog post. The bug is something that would be useful to an attacker who has already obtained initial access to a system, Walters noted.
+              </div>
+            </div>
+            <div class="box-comments">
+              <div class="title-box-2">
+                <h4 class="title-comments title-left">Comments (1)</h4>
+              </div>
+              <ul class="list-comments">
+                <li>
+                  <div class="comment-avatar">
+                  </div>
+                  <div class="comment-details">
+                    <h4 class="comment-author"></h4>
+                    <span>10 Nov 2023</span>
+                    <p>
+                      Critical Severity Bugs
+                      The three vulnerabilities in the November update that Microsoft assessed as being of critical severity are: CVE-2023-36397, a remote code execution (RCE) in Windows Pragmatic General Multicast protocol for transporting multicast data; CVE-2023-36400, an elevation of privilege bug in the Windows HMAC Key Derivation feature; and CVE-2023-36052, an information disclosure flaw in an Azure component.
+                    </p>
+
+                    
+                    
+                    <a href="3">Reply</a>
+                  </div>
+                </li>
+
+              <form class="form-mf">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-mf" id="inputName" placeholder="Name *" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input type="email" class="form-control input-mf" id="inputEmail1" placeholder="Email *" required>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <input type="url" class="form-control input-mf" id="inputUrl" placeholder="Website">
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <textarea id="textMessage" class="form-control input-mf" placeholder="Comment *" name="message" cols="45" rows="8" required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="widget-sidebar sidebar-search">
+              <h5 class="sidebar-title">Search</h5>
+              <div class="sidebar-content">
+                <form>
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary btn-search" type="button">
+                        <span class="bi bi-search"></span>
+                      </button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+            
+            <div class="widget-sidebar widget-tags">
+              <h5 class="sidebar-title">Tags</h5>
+              <div class="sidebar-content">
+                <ul>
+                  <li>
+                    <a href="#">Web.</a>
+                  </li>
+                  <li>
+                    <a href="#">Design.</a>
+                  </li>
+                  <li>
+                    <a href="#">Travel.</a>
+                  </li>
+                  <li>
+                    <a href="#">Photoshop</a>
+                  </li>
+                  <li>
+                    <a href="#">Corel Draw</a>
+                  </li>
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+ 
+   <!-- ======= Footer ======= -->
+   <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Aska Shif</strong>. All Rights Reserved</p>
+            <div class="credits">
+             
+              Designed by <a href="Aska Shif">Aska SHif</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- End  Footer -->
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!--  Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
